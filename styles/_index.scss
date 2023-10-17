@@ -1,0 +1,73 @@
+.wrapper{
+  background-image: url(/images/pattern-bg-desktop.png);
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  z-index: -1;
+  position: fixed;
+  background-position: center;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  top: 280px;
+
+  // .leaflet-marker-pane{
+  //   img{
+  //     // content: none;
+  //     content: url(../public/images/marker-icon-2x.png);
+  //   }
+  // }
+
+  // .leaflet-shadow-pane{
+  //   img{
+  //     content: none;
+  //   }
+  // }
+}
+
+.searchIDGroup{
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.info{
+  border-radius: 16px;
+  padding: 36px 32px;
+  gap: 36px;
+
+  .infoBlock{
+    width: 210px;
+    // flex-grow: 1;
+
+    small {
+      color: $secondary;
+    }
+  }
+  
+  .vr{
+    opacity: 1;
+    // background-color: $stroke;
+  }
+}
+
+@media (max-width: 991px) {
+  .info{
+    gap: 20px;
+    padding: 24px 34px;
+
+    .infoBlock{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width:576px){
+  .wrapper {
+    background-image: url(/images/pattern-bg-mobile.png);
+    height: 300px;
+  }
+}

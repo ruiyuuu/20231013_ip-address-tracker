@@ -1,0 +1,21 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+
+
+@import '_variable';
+@import '_index';
+@import '_input';
+@import '_button';
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik';
+}
+
+
+

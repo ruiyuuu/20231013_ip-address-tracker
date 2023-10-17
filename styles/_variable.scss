@@ -1,0 +1,44 @@
+$primary: #191919;
+$secondary:#919191;
+$stroke: #D9D9D9;
+
+
+
+
+h1{
+  font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.31px;
+}
+
+h2{
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.27px;
+}
+
+small{
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.17px;
+}
+
+@media (max-width: 991px) {
+  h1{
+    font-size: 26px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  small{
+    font-size: 11px;
+  }
+}
