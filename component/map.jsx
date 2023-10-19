@@ -1,16 +1,6 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
-import L from "leaflet";
-import icon from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
-
-let DefaultIcon = L.icon({
-  iconUrl: icon,
-  shadowUrl: iconShadow,
-});
-
-L.Marker.prototype.options.icon = DefaultIcon;
 
 
 export function ChangeView({ coords }) {
@@ -19,12 +9,15 @@ export function ChangeView({ coords }) {
   return null;
 }
 
-export default function Map() {
-  const [geoData, setGeoData] = useState({ lat: 25.04776, lng: 121.53185 });
+export default function Map({ geoData }) {
 
   const center = [geoData.lat, geoData.lng];
 
-  const icon = L.icon({ iconUrl: "/images/pin.svg" });
+  const icon = L.icon({
+    iconUrl: "/images/pin.svg",
+    iconSize: [46, 56],
+    iconAnchor: [23, 56],
+  });
 
   return (
     <MapContainer center={center} zoom={12} style={{ height: "100vh" }}>
